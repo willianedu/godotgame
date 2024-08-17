@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ysab41midoi5"]
+
+[ext_resource type="PackedScene" uid="uid://bikv8sv355862" path="res://Models/crate.glb" id="1_iwcxu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_maxfs"]
+
+[node name="crate" instance=ExtResource("1_iwcxu")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.249765, 0)
+shape = SubResource("BoxShape3D_maxfs")

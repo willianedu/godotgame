@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://catuiepo23n85"]
+
+[ext_resource type="PackedScene" uid="uid://ysab41midoi5" path="res://objetos/crate.tscn" id="1_c6lxm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xlnct"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+visible = false
+mesh = SubResource("BoxMesh_xlnct")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.869509, -0.0173651, 0.493612, 0.151597, 0.941762, 0.300172, -0.470078, 0.335832, -0.816238, 1.14495, 0.952142, -1.58784)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.842217, 0.539138, 0, -0.539138, -0.842217, 0.162105, 1.1017, -1.82385)
+
+[node name="crate" parent="." instance=ExtResource("1_c6lxm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0685602, 0, -0.0119034)
